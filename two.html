@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>table validation</title>
+		<marquee><h1 style="font-size:3em">Registration Form</h1></marquee>
+		<script>
+			   function registration(){	
+			   		var a =document.registration_form.name.value;
+			   		var b =document.registration_form.fathername.value;
+			   		var c =document.registration_form.dob.value;
+			   		var d =document.registration_form.address.value;
+			   		 var e = document.registration_form.email.value;//console.log(g);
+			   		var f =document.registration_form.phone.value;//console.log(f);return false;
+                     if(a ==""){
+                     	alert("please enter name");
+                     	return false;
+                     }
+                     if(b ==""){
+                     	alert("please enter father name");
+                     	return false;
+                     } 
+                     if(c ==""){
+                     	alert("please enter date of brith");
+                     	return false;
+                     } 
+                     if(d ==""){
+                     	alert("please enter address");
+                     	return false;
+                     }
+                     if(e == "") {
+                    	alert("enter your correct EmailID");
+                    	return false;
+            		}else{
+                    	ValidateEmail(e);
+                	}
+                	if(f == "")	{
+                		alert("enter the phone number");
+                		return false;
+                	}
+                  
+			   	}
+			   	function ValidateEmail(mail) {
+	                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+	                   return (true)
+	                }
+	                alert("You have entered an invalid email address!")
+	                return (false)
+            	}
+			
+
+		</script>
+	</head>
+ 	<body align="center" bgcolor="violet"><br><br>
+     	<form name="registration_form"> 
+
+		     <label for="name">NAME:</label>
+		     <input type="text" name="name" placeholder="enter name"><br><br>
+
+		     <label for="fathername">FATHERNAME:</label>
+		     <input type="text" name="fathername" placeholder="enter name"><br><br>
+
+		     <label for="dob">DOB:</label>
+		     <input type="date" name="dob" placeholder="enter date"><br><br>
+
+		     <lable for="address">ADDRESS:</lable>
+		     <textarea type="text" name="address" placeholder="enter the adderess"></textarea><br><br>
+
+		     <label for="email">Email:</label>
+		     <input type="email" name="email" placeholder="enter the Email"><br><br>
+
+		     <label for="phone">PHonrnumber:</label>
+		     <input type="tel" name="phone" placeholder="enter PHone number"><br><br>
+
+		     <input type="submit" value="ok" onclick="registration()">
+     	</form>
+ 	</body>
+</html>

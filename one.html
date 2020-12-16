@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form validation</title>
+		<script>
+			function validation(){
+				var name =document.validation_form.pname.value;
+				var fathername =document.validation_form.sonof.value;
+				if(name ==""){
+					alert("please enter name");
+					return false;
+				}
+				if(fathername ==""){
+					alert("please enter father name");
+					return false;
+				} 
+
+			}
+		</script>
+ 	</head>
+ 	<body align="center" bgcolor="lightblue">
+
+ 		<form name="validation_form">
+
+   			<label>name</label>
+ 			<input type="text" name="pname" placeholder="enter your name" value=""><br><br>
+
+ 			<label>s/o</label>
+ 			<input type="text" name="sonof" placeholder="enter your name" value=""><br><br>
+
+ 			<input type="submit"value="ok" onclick="validation()" >
+ 		</form>
+ 	</body>

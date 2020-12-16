@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+
+<style type="text/css">
+	.right{
+		margin-right: 300%;
+	}
+
+</style>
+	      <title>table creative</title>
+	       <marquee><h1><mark> Registration SForm</mark></marquee></h1>
+	       <script>
+		   function registration(){
+		        var a =document.registration_form.studentname.value;
+		   	    var b =document.registration_form.fathername.value;
+		   	    var c =document.registration_form.date.value;
+	   	        // var d =document.registration_form.address.value;
+		   	    var e =document.registration_form.email.value; 
+		   	    var f =document.registration_form.phonenumber.value; 
+		   	    var g =document.registration_form.qualification.value;     
+		   	   if(a ==""){
+                  alert("please enter student name");
+                    return false;
+		         }
+		          if(b ==""){
+                alert("please enter father name");
+                    return false;
+
+                  if(c ==""){
+                alert("please enter date");
+                    return false;
+                //  }
+                //   if(d ==""){
+                // alert("please enter addree");
+              	 //    return false;
+                }
+                 if(e ==""){
+                alert("please enter email");
+                   return false;
+                }
+                 if(f ==""){
+                alert("please enter phonenumber");
+                   return flase;
+                }
+                if(g ==""){
+                alert("your qualification");
+                   return flase;
+                 
+		       }	            
+                }
+
+	</script>
+</head>
+      <body align="left" bgcolor="gray">
+	     <form name="registration_form"> 
+          <table>
+            <tr>
+		       <th><label for="name">Studentname:<i style="color:red;">*</i></label></th>
+		       <td><input type="text" name="studentname" placeholder=" enter your name"> </td> </tr>
+            
+		   <tr>	
+		      <div  class="right">                            
+		       <th><label for="father">Fathername:<i style="color:red;">*</i></label></th>
+               <td><input type="text" name="fathername" placeholder=" enter your name"></td></div></tr><br>
+           	
+            <tr>
+            	<th><label for="Dob">Dob:<i style="color:red;text-align:right">*</i></label></th>
+                <td><input type="date" name="date" placeholder=" enter your date"></td></tr><br>
+
+            <tr>
+                <th><label for="address">address:</label></th>
+                <td><input type="text" name="address" placeholder="enter your address"></td></tr>
+                <th><label for="email">email:<i style="color:red;">*</i></label></th>
+                <td><input type="text" name="email" placeholder="enter your email"></td></tr>
+
+            <tr>
+            	<th><label for="phonenumber">phonenumber:<i style="color:red;">*</i></label></th>
+                <td><input type="text" name="phonenumber" placeholder="enter your number"></td></tr>
+            <tr>
+		       <th><label for="qualification">Qualification:<i style="color:red;">*</i></label></th>
+               <td><input type="text" name="qualification" placeholder=" enter your name"></td></tr>
+            
+            <tr>
+               <th><label for="subject">Subject:</label> </th>
+               <td><input type="text" name="subject"  placeholder="interest subject"></td></tr>
+    </table>
+	
+		     
+   	</form>
+   	</body><br><br>
+         <button onclick="document.getElementById('myImage').src='theree_files/123.gif'">omesh on the light</button><br><br>
+        
+         <button onclick="document.getElementById('myImage').src='theree_files/26.jpeg'">madhavi</button><br><br>
+
+         <img id="myImage" src="theree_files/123.gif" style="width:200px">
+
+         <button onclick="document.getElementById('myImage').src='theree_files/321.gif'">omesh off the light</button><br><br>
+
+         <button onclick="document.getElementById('myImage').src='theree_files/21.jpeg'">keerthi siri</button><br><br>
+
+         <button onclick="document.getElementById('myImage').src='theree_files/22.jpeg'">geetha</button>
+        
+         <button onclick="document.getElementById('myImage').src='theree_files/23.jpeg'">sai pallavi</button>
+        
+         <button onclick="document.getElementById('myImage').src='theree_files/24.jpeg'">tamanna</button>
+        
+         <button onclick="document.getElementById('myImage').src='theree_files/25.jpeg'">kajal</button>
+
+         <button onclick="document.getElementById('myImage').src='theree_files/26.jpeg'">madhavi</button><br><br>
+         <center><input type="submit" value="submit" onclick="registration()"></center>
+
+         <p style="color:blue;" id="demo" align="center"><b><i> hello evey one gays'i am omesh full busy java script training yantharaa company<br>i have never been so made in life</b></i>.</p>
+         <button type="button"onclick="document.getElementById('demo').style.fontSize='35px'"><mark>Click Me!</mark></button>
+
+
+   	 </html>						
+	
